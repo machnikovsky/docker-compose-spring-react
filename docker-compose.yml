@@ -1,0 +1,36 @@
+version: '3'
+services:
+  backend:
+    build: ./BackEnd
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+      - nginx
+    restart: always
+  frontend:
+    build: ./FronteEnd
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+    restart: always
+  db:
+    container_name: 'db'
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: fullstackdb
+    ports:
+      - 5432:5432
+    restart: always
+  nginx:
+    restart: always
+    image: nginx:1.13
+    container_name: my_nginx
+    #build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
