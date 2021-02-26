@@ -1,0 +1,15 @@
+pl\machnikovsky\fullstacktest\controller\AdminApiController.class
+pl\machnikovsky\fullstacktest\service\BlogService.class
+pl\machnikovsky\fullstacktest\FullstacktestApplication.class
+pl\machnikovsky\fullstacktest\controller\BlogController.class
+pl\machnikovsky\fullstacktest\security\ApplicationUserPermission.class
+pl\machnikovsky\fullstacktest\service\BlogUserService.class
+pl\machnikovsky\fullstacktest\security\ApplicationUserRole.class
+pl\machnikovsky\fullstacktest\model\BlogUser.class
+pl\machnikovsky\fullstacktest\repository\BlogUserRepository.class
+pl\machnikovsky\fullstacktest\controller\BlogUserController.class
+pl\machnikovsky\fullstacktest\security\ApplicationSecurityConfig.class
+pl\machnikovsky\fullstacktest\controller\TemplateController.class
+pl\machnikovsky\fullstacktest\security\PasswordConfig.class
+pl\machnikovsky\fullstacktest\model\Blog.class
+pl\machnikovsky\fullstacktest\repository\BlogRepository.class
